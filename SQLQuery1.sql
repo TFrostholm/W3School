@@ -58,3 +58,17 @@ VALUES ('RG Trading', 'Rikko Gorm', 'Vejnavn 33', 'Sorø', 4180, 'Denmark');
 -- Inserting data in only some of the columns
 INSERT INTO Customers(CustomerName, City, Country)
 VALUES ('Tricky Business', 'Rome', 'Italy');
+
+-- The UPDATE statement is used to update records in a table.
+UPDATE Customers
+SET ContactName='Robert Persson', City='Stuttgart', PostalCode = 70563
+WHERE CustomerName='Alfreds Futterkiste';
+
+-- The DELETE statement is used to delete records in a table.
+DELETE FROM Customers
+WHERE CustomerName='Around the Horn';
+
+-- The SELECT TOP clause is used to specify the number of records to return.
+-- The SELECT TOP clause can be very useful on large tables with thousands of records. 
+-- Returning a large number of records can impact on performance.
+
